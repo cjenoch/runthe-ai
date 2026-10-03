@@ -24,7 +24,9 @@ The walkthrough uses fictional data in memory only. It makes no model calls, upl
 
 ## Deployment
 
-The live preview is https://cjenoch.github.io/runthe-ai/ and its public source repository is https://github.com/cjenoch/runthe-ai. GitHub Pages provides HTTPS and the deployment workflow republishes on pushes to main. The custom domain can be connected after DNS access is available. Do not add a CNAME file until the DNS records and GitHub Pages custom domain configuration are ready.
+The custom domain is https://runthe.ai/ and its public source repository is https://github.com/cjenoch/runthe-ai. GitHub Pages serves the website and the deployment workflow republishes on pushes to main. GitHub's Pages settings bind the deployment to `runthe.ai`; a CNAME file is not required for this Actions-based deployment.
+
+Cloudflare manages DNS. The apex has four DNS-only A records pointing to GitHub Pages (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`). `www` is a DNS-only CNAME to `cjenoch.github.io`, with GitHub Pages redirecting it to the apex. The original project URL https://cjenoch.github.io/runthe-ai/ also redirects to the custom domain. DNS was configured on 2026-10-03 using the existing authorized Cloudflare connection in Hermes; no new credential was created or copied into this repository.
 
 The page can also be served by any static host using only `public/`. It requires no VPS process, database, or application secrets. Asset paths are relative so the page works both at a domain root and under a GitHub Pages project path.
 
