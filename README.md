@@ -24,9 +24,13 @@ The walkthrough uses fictional data in memory only. It makes no model calls, upl
 
 ## Deployment
 
-GitHub Pages provides the initial HTTPS deployment. The custom domain can be connected after DNS access is available. Do not add a CNAME file until the DNS records and GitHub Pages custom domain configuration are ready.
+The live preview is https://cjenoch.github.io/runthe-ai/ and its public source repository is https://github.com/cjenoch/runthe-ai. GitHub Pages provides HTTPS and the deployment workflow republishes on pushes to main. The custom domain can be connected after DNS access is available. Do not add a CNAME file until the DNS records and GitHub Pages custom domain configuration are ready.
 
 The page can also be served by any static host using only `public/`. It requires no VPS process, database, or application secrets. Asset paths are relative so the page works both at a domain root and under a GitHub Pages project path.
+
+## Verification
+
+Checked in a browser at desktop and phone widths (1440, 390, and 320 pixels): layout, no horizontal overflow on small phones, adding example sets, accepting a name, undoing it without losing sets, deferring a suggestion, and resetting the walkthrough. JavaScript syntax is also checked by the deployment workflow. These checks cover this landing page, not the real DocLifts application or its phone acceptance.
 
 ## Content sources
 

@@ -1,67 +1,299 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f4f4ed">
-  <meta name="description" content="Useful software. Human control. Run the AI is a home for things I build, starting with DocLifts: a workout log that lets you keep lifting while AI helps with the details.">
-  <meta property="og:title" content="Run the AI. Don't let it run you.">
-  <meta property="og:description" content="Useful software. Human control. Meet DocLifts, the first build from runthe.ai.">
-  <meta property="og:type" content="website">
-  <title>runthe.ai — Useful software. Human control.</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23dcff60'/%3E%3Cpath d='M11 30V11h6v4c3-4 7-5 12-4v6c-8-2-12 1-12 7v6z' fill='%23202320'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./app.js" defer></script>
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="wrap masthead">
-    <a class="wordmark" href="./" aria-label="Run the AI home">run<span>the</span>.ai<span class="brand-square" aria-hidden="true"></span></a>
-    <nav aria-label="Main navigation"><a href="#work">The work</a><a href="#approach">The approach</a><a class="nav-github" href="https://github.com/cjenoch">GitHub</a></nav>
-  </header>
-  <main id="main">
-    <section class="hero wrap" aria-labelledby="headline">
-      <div class="eyebrow"><span class="cross" aria-hidden="true">+</span> INDEPENDENT SOFTWARE / BUILT WITH INTENT</div>
-      <h1 id="headline">Run the AI.<br><span class="outline">Don’t let it</span><br><span class="last-line">run you.<span class="cursor" aria-hidden="true"></span></span></h1>
-      <div class="hero-bottom"><p>I build useful software that puts you in control.<br>AI helps with the details. You decide what matters.</p><a class="button dark" href="#work">See what I’m building</a></div>
-      <div class="hero-foot"><span>LESS FRICTION. MORE DOING.</span><span>01 / THE FIRST BUILD</span></div>
-    </section>
-    <section id="work" class="project" aria-labelledby="project-title">
-      <div class="wrap project-grid">
-        <div class="project-copy">
-          <div class="eyebrow"><span class="project-number">01</span> BUILT FOR THE GYM</div>
-          <h2 id="project-title">DocLifts<span class="lime">.</span></h2>
-          <p class="project-lede">Keep lifting.<br>The details can catch up.</p>
-          <p class="project-description">A workout log for the way you actually train. Photograph a machine, start recording your sets, and let AI help identify the equipment in the background.</p>
-          <p class="project-description">Review the suggestion when you’re ready. Your saved sets stay put.</p>
-          <a class="button lime-button" href="https://github.com/cjenoch/DocLifts">Explore DocLifts on GitHub</a>
-          <p class="availability">In active development. Source and self-hosted demo available.</p>
-          <div class="project-tags"><span>WORKOUT LOGGING</span><span>MACHINE HISTORY</span><span>EDITABLE PROGRAMS</span></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f4f4ed" />
+    <meta
+      name="description"
+      content="Useful software. Human control. Run the AI is a home for things I build, starting with DocLifts: a workout log that lets you keep lifting while AI helps with the details."
+    />
+    <meta property="og:title" content="Run the AI. Don't let it run you." />
+    <meta
+      property="og:description"
+      content="Useful software. Human control. Meet DocLifts, the first build from runthe.ai."
+    />
+    <meta property="og:type" content="website" />
+    <title>runthe.ai — Useful software. Human control.</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23dcff60'/%3E%3Cpath d='M11 30V11h6v4c3-4 7-5 12-4v6c-8-2-12 1-12 7v6z' fill='%23202320'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="wrap masthead">
+      <a class="wordmark" href="./" aria-label="Run the AI home"
+        >run<span>the</span>.ai<span
+          class="brand-square"
+          aria-hidden="true"
+        ></span
+      ></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">The work</a><a href="#approach">The approach</a
+        ><a class="nav-github" href="https://github.com/cjenoch">GitHub</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="headline">
+        <div class="eyebrow">
+          <span class="cross" aria-hidden="true">+</span> INDEPENDENT SOFTWARE /
+          BUILT WITH INTENT
         </div>
-        <div class="demo-area">
-          <div class="demo-top"><span>THE IDEA, IN ACTION</span><span>INTERACTIVE WALKTHROUGH</span></div>
-          <div class="workout" aria-label="Illustrative DocLifts workflow">
-            <div class="workout-heading"><span class="mini-logo">d<span>.</span></span><span>Quick workout</span><span class="session-label">EXAMPLE SESSION</span></div>
-            <div class="workout-body">
-              <div class="workout-caption">CURRENT EXERCISE</div>
-              <h3 id="machine-name">Unidentified machine</h3>
-              <div id="identification" class="identification"><span class="scan-icon" aria-hidden="true">⌗</span><span>Photo added. Keep logging.</span><span class="ai-label">AI</span></div>
-              <table><caption class="sr-only">Example workout sets</caption><thead><tr><th scope="col">SET</th><th scope="col">LB</th><th scope="col">REPS</th><th scope="col">STATUS</th></tr></thead><tbody id="sets"><tr><th scope="row">01</th><td>100</td><td>10</td><td><span class="saved">✓ Saved</span></td></tr></tbody></table>
-              <form id="set-form"><div class="set-fields"><label>Weight <span>(lb)</span><input name="weight" type="number" inputmode="decimal" min="1" max="2000" step="0.5" value="100" required></label><label>Reps<input name="reps" type="number" inputmode="numeric" min="1" max="100" value="10" required></label><button class="log-button" type="submit">Log set <span aria-hidden="true">+</span></button></div></form>
-              <div class="review-area"><div><span class="review-label">WHEN YOU’RE READY</span><p id="review-description">A suggestion is waiting for your review.</p></div><button id="review-button" type="button">Review suggestion</button></div>
-              <div id="suggestion" hidden><p><strong>Looks like a leg press.</strong><br>Use this name, or keep logging and decide later.</p><div class="suggestion-buttons"><button id="accept-button" type="button">Use leg press</button><button id="dismiss-button" type="button">Decide later</button></div></div>
-              <p id="demo-status" class="demo-status" role="status">Try logging a set before reviewing the suggestion.</p>
+        <h1 id="headline">
+          Run the AI.<br /><span class="outline">Don’t let it</span><br /><span
+            class="last-line"
+            >run you.<span class="cursor" aria-hidden="true"></span
+          ></span>
+        </h1>
+        <div class="hero-bottom">
+          <p>
+            I build useful software that puts you in control.<br />AI helps with
+            the details. You decide what matters.
+          </p>
+          <a class="button dark" href="#work">See what I’m building</a>
+        </div>
+        <div class="hero-foot">
+          <span>LESS FRICTION. MORE DOING.</span
+          ><span>01 / THE FIRST BUILD</span>
+        </div>
+      </section>
+      <section id="work" class="project" aria-labelledby="project-title">
+        <div class="wrap project-grid">
+          <div class="project-copy">
+            <div class="eyebrow">
+              <span class="project-number">01</span> BUILT FOR THE GYM
+            </div>
+            <h2 id="project-title">DocLifts<span class="lime">.</span></h2>
+            <p class="project-lede">
+              Keep lifting.<br />The details can catch up.
+            </p>
+            <p class="project-description">
+              A workout log for the way you actually train. Photograph a
+              machine, start recording your sets, and let AI help identify the
+              equipment in the background.
+            </p>
+            <p class="project-description">
+              Review the suggestion when you’re ready. Your saved sets stay put.
+            </p>
+            <a
+              class="button lime-button"
+              href="https://github.com/cjenoch/DocLifts"
+              >Explore DocLifts on GitHub</a
+            >
+            <p class="availability">
+              In active development. Source and self-hosted demo available.
+            </p>
+            <div class="project-tags">
+              <span>WORKOUT LOGGING</span><span>MACHINE HISTORY</span
+              ><span>EDITABLE PROGRAMS</span>
             </div>
           </div>
-          <div class="demo-caption"><p>Illustrative demo. No photo upload or AI call.<br>Example sets stay here until you reload.</p><button id="reset-button" type="button">Reset demo</button></div>
-          <noscript><p>This walkthrough needs JavaScript. The real app’s source and demo instructions are linked on GitHub.</p></noscript>
+          <div class="demo-area">
+            <div class="demo-top">
+              <span>THE IDEA, IN ACTION</span
+              ><span>INTERACTIVE WALKTHROUGH</span>
+            </div>
+            <div class="workout" aria-label="Illustrative DocLifts workflow">
+              <div class="workout-heading">
+                <span class="mini-logo">d<span>.</span></span
+                ><span>Quick workout</span
+                ><span class="session-label">EXAMPLE SESSION</span>
+              </div>
+              <div class="workout-body">
+                <div class="workout-caption">CURRENT EXERCISE</div>
+                <h3 id="machine-name">Unidentified machine</h3>
+                <div id="identification" class="identification">
+                  <span class="scan-icon" aria-hidden="true">⌗</span
+                  ><span>Photo added. Keep logging.</span
+                  ><span class="ai-label">AI</span>
+                </div>
+                <table>
+                  <caption class="sr-only">
+                    Example workout sets
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">SET</th>
+                      <th scope="col">LB</th>
+                      <th scope="col">REPS</th>
+                      <th scope="col">STATUS</th>
+                    </tr>
+                  </thead>
+                  <tbody id="sets">
+                    <tr>
+                      <th scope="row">01</th>
+                      <td>100</td>
+                      <td>10</td>
+                      <td><span class="saved">✓ Saved</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <form id="set-form">
+                  <div class="set-fields">
+                    <label
+                      >Weight <span>(lb)</span
+                      ><input
+                        name="weight"
+                        type="number"
+                        inputmode="decimal"
+                        min="1"
+                        max="2000"
+                        step="0.5"
+                        value="100"
+                        required /></label
+                    ><label
+                      >Reps<input
+                        name="reps"
+                        type="number"
+                        inputmode="numeric"
+                        min="1"
+                        max="100"
+                        value="10"
+                        required /></label
+                    ><button class="log-button" type="submit">
+                      Log set <span aria-hidden="true">+</span>
+                    </button>
+                  </div>
+                </form>
+                <div class="review-area">
+                  <div>
+                    <span class="review-label">WHEN YOU’RE READY</span>
+                    <p id="review-description">
+                      A suggestion is waiting for your review.
+                    </p>
+                  </div>
+                  <button id="review-button" type="button">
+                    Review suggestion
+                  </button>
+                </div>
+                <div id="suggestion" hidden>
+                  <p>
+                    <strong>Looks like a leg press.</strong><br />Use this name,
+                    or keep logging and decide later.
+                  </p>
+                  <div class="suggestion-buttons">
+                    <button id="accept-button" type="button">
+                      Use leg press</button
+                    ><button id="dismiss-button" type="button">
+                      Decide later
+                    </button>
+                  </div>
+                </div>
+                <p id="demo-status" class="demo-status" role="status">
+                  Try logging a set before reviewing the suggestion.
+                </p>
+              </div>
+            </div>
+            <div class="demo-caption">
+              <p>
+                Illustrative demo. No photo upload or AI call.<br />Example sets
+                stay here until you reload.
+              </p>
+              <button id="reset-button" type="button">Reset demo</button>
+            </div>
+            <noscript
+              ><p>
+                This walkthrough needs JavaScript. The real app’s source and
+                demo instructions are linked on GitHub.
+              </p></noscript
+            >
+          </div>
         </div>
-      </div>
-      <div class="wrap feature-strip"><article><span class="feature-index">01 / CONTINUITY</span><h3>Your workout keeps moving.</h3><p>Record sets while identification runs. A failed model call doesn’t have to end a workout.</p></article><article><span class="feature-index">02 / CONTEXT</span><h3>The right history, in the right place.</h3><p>Each machine keeps its own history. Your free-weight history follows you between gyms.</p></article><article><span class="feature-index">03 / CONTROL</span><h3>Plans that leave room for real life.</h3><p>Edit your workout as you go. Choose a change for just today or carry it into your program.</p></article></div>
-    </section>
-    <section id="approach" class="approach wrap" aria-labelledby="approach-title"><div class="section-heading"><span class="eyebrow">THE APPROACH</span><span class="small-note">A PRINCIPLE, PUT TO WORK.</span></div><div class="approach-grid"><h2 id="approach-title">Useful first.<br><span class="muted">Intelligent where<br>it helps.</span></h2><div class="principles"><article><span>01</span><div><h3>Start with something worth doing.</h3><p>A workout to finish. A document to understand. A repetitive task to get out of the way. The job comes first.</p></div></article><article><span>02</span><div><h3>Keep the person in charge.</h3><p>Make suggestions clear, uncertainty visible, and corrections possible. Give people the final say.</p></div></article><article><span>03</span><div><h3>Build it. Use it. Make it better.</h3><p>DocLifts is the first working example. What comes next will grow out of real use, real problems, and what’s worth building.</p></div></article></div></div></section>
-    <section class="closing wrap"><div><span class="eyebrow">LESS THEORY. MORE WORKING SOFTWARE.</span><h2>This is the starting line.</h2><p>Follow the builds, read the code, and see how the pieces work.</p></div><a class="button dark" href="https://github.com/cjenoch">Follow the work on GitHub</a></section>
-  </main>
-  <footer class="wrap"><a class="wordmark" href="./">run<span>the</span>.ai</a><p>Useful software. Human control.</p><span>© 2026 Enoch AI LLC</span></footer>
-</body>
+        <div class="wrap feature-strip">
+          <article>
+            <span class="feature-index">01 / CONTINUITY</span>
+            <h3>Your workout keeps moving.</h3>
+            <p>
+              Record sets while identification runs. A failed model call doesn’t
+              have to end a workout.
+            </p>
+          </article>
+          <article>
+            <span class="feature-index">02 / CONTEXT</span>
+            <h3>The right history, in the right place.</h3>
+            <p>
+              Each machine keeps its own history. Your free-weight history
+              follows you between gyms.
+            </p>
+          </article>
+          <article>
+            <span class="feature-index">03 / CONTROL</span>
+            <h3>Plans that leave room for real life.</h3>
+            <p>
+              Edit your workout as you go. Choose a change for just today or
+              carry it into your program.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        id="approach"
+        class="approach wrap"
+        aria-labelledby="approach-title"
+      >
+        <div class="section-heading">
+          <span class="eyebrow">THE APPROACH</span
+          ><span class="small-note">A PRINCIPLE, PUT TO WORK.</span>
+        </div>
+        <div class="approach-grid">
+          <h2 id="approach-title">
+            Useful first.<br /><span class="muted"
+              >Intelligent where<br />it helps.</span
+            >
+          </h2>
+          <div class="principles">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Start with something worth doing.</h3>
+                <p>
+                  A workout to finish. A document to understand. A repetitive
+                  task to get out of the way. The job comes first.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Keep the person in charge.</h3>
+                <p>
+                  Make suggestions clear, uncertainty visible, and corrections
+                  possible. Give people the final say.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Build it. Use it. Make it better.</h3>
+                <p>
+                  DocLifts is the first working example. What comes next will
+                  grow out of real use, real problems, and what’s worth
+                  building.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="closing wrap">
+        <div>
+          <span class="eyebrow">LESS THEORY. MORE WORKING SOFTWARE.</span>
+          <h2>This is the starting line.</h2>
+          <p>Follow the builds, read the code, and see how the pieces work.</p>
+        </div>
+        <a class="button dark" href="https://github.com/cjenoch"
+          >Follow the work on GitHub</a
+        >
+      </section>
+    </main>
+    <footer class="wrap">
+      <a class="wordmark" href="./">run<span>the</span>.ai</a>
+      <p>Useful software. Human control.</p>
+      <span>© 2026 Enoch AI LLC</span>
+    </footer>
+  </body>
 </html>
