@@ -16,11 +16,10 @@ Open http://127.0.0.1:4321. Run `npm run check` for JavaScript syntax validation
 
 - `public/index.html`: page content and semantic structure
 - `public/style.css`: responsive layout, typography, color, reduced-motion support
-- `public/app.js`: illustrative workout interaction
 - `scripts/serve.mjs`: local preview server (not a production server)
 - `.github/workflows/deploy.yml`: publish the public directory to GitHub Pages on pushes to main
 
-The walkthrough uses fictional data in memory only. It makes no model calls, uploads no photos, and does not connect to DocLifts or store real workouts. Reloading resets it. Google Fonts supplies DM Sans and Space Grotesk; system fonts are the fallback. There are no analytics or cookies.
+The page links to the live DocLifts Alpha, its MCP connection guide and the enoch.ai case study. The former fictional workout walkthrough has been retired. This landing page makes no model calls, uploads no photos and stores no workout data. Google Fonts supplies DM Sans and Space Grotesk; system fonts are the fallback. There are no analytics or cookies.
 
 ## Deployment
 
@@ -32,10 +31,10 @@ The page can also be served by any static host using only `public/`. It requires
 
 ## Verification
 
-Checked in a browser at desktop and phone widths (1440, 390, and 320 pixels): layout, no horizontal overflow on small phones, adding example sets, accepting a name, undoing it without losing sets, deferring a suggestion, and resetting the walkthrough. JavaScript syntax is also checked by the deployment workflow. These checks cover this landing page, not the real DocLifts application or its phone acceptance.
+Verify desktop and phone widths (1440, 390, and 320 pixels), no horizontal overflow, and the live-app, case-study, source and MCP-guide links. The deployment workflow also checks the preview server's JavaScript syntax. These checks cover the landing page, not the DocLifts application's acceptance suite.
 
 ## Content sources
 
-Product descriptions were checked against the DocLifts changelog on 2026-10-03, including its photo workflow, machine history, live workout editing, and editable starter programs. The current README for DocLifts contains older descriptions; the homepage does not claim the private app is publicly available. This repository does not modify or deploy DocLifts.
+Product descriptions reflect DocLifts 0.16.3 Alpha on 2026-10-03: a live multi-user app with photo identification, image screening, machine history and read-only MCP access. Muse has successfully read app sets and imported history, with optional notes access authorized. Other clients require individual verification. Alpha accounts are operator-managed; public signup is closed. This repository does not modify or deploy DocLifts.
 
 Copyright 2026 Enoch AI LLC. All rights reserved.

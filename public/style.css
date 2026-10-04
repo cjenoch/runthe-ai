@@ -868,3 +868,15 @@ thead {
     font-size: 56px;
   }
 }
+
+.agent-panel { min-width: 0; padding-top: 4px; }
+.agent-panel .workout { transform: none; }
+.agent-panel .workout-body > p { font-size: 15px; }
+.agent-steps { list-style: none; padding: 0; margin: 24px 0; counter-reset: step; }
+.agent-steps li { counter-increment: step; padding: 16px 0 16px 36px; border-top: 1px solid var(--rule); position: relative; }
+.agent-steps li::before { content: "0" counter(step); position: absolute; left: 0; top: 17px; font: 600 12px/1.6 var(--display); color: var(--muted); }
+.agent-steps strong, .agent-steps span { display: block; }
+.agent-steps span { margin-top: 5px; color: var(--muted); font-size: 14px; }
+.agent-proof { border-left: 3px solid #829544; padding-left: 12px; color: var(--muted); }
+.agent-link, .project-links a { display: inline-block; padding: 8px 0; text-decoration: underline; text-underline-offset: 4px; }
+.project-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 22px 0 0; font-size: 14px; }
