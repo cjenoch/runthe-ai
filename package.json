@@ -5,6 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/serve.mjs",
-    "check": "node --check public/app.js"
+    "check": "node --check scripts/serve.mjs"
   }
 }
