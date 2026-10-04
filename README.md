@@ -35,6 +35,10 @@ The separate UI playground at https://runthe.ai/testing/doclifts.html compares G
 
 For the playground, check layout switching and shared set logging at 390px and 320px. The page is intentionally unlinked from the main landing page.
 
+The clock opens timer settings (sound off by default, optional pulse/shake, duration and an alert preview). Audio uses Web Audio after a user gesture; locked-phone/background delivery is not guaranteed. Reduced-motion preferences disable the animations. RIR can follow the current prescription or a personal Show/Hide override; hidden values are retained. Edit workout stages additions/removals before applying them, with a one-step undo until subsequent set/note edits. "From now on" saves a local sample program; nothing is written to DocLifts.
+
+Editable playground sources live in `prototypes/`. Rebuild the committed standalone page with `python scripts/export-playground.py /path/to/visualize/scripts/render.py` using the installed visualization renderer. Run `node --check prototypes/workout-interactions.js` before exporting. GitHub Pages serves the committed export directly.
+
 Verify desktop and phone widths (1440, 390, and 320 pixels), no horizontal overflow, and the live-app, case-study, source and MCP-guide links. The deployment workflow also checks the preview server's JavaScript syntax. These checks cover the landing page, not the DocLifts application's acceptance suite.
 
 ## Content sources
