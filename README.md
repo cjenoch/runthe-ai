@@ -31,6 +31,10 @@ The page can also be served by any static host using only `public/`. It requires
 
 ## Verification
 
+The separate UI playground at https://runthe.ai/testing/doclifts.html compares Guided, Set table, Notebook and Tap sets using shared sample data. It is an interactive design prototype, not connected to the live app. Prototype edits are kept in the visitor's browser; no accounts or real workout data are loaded. The standalone document includes its illustrative machine image and is marked `noindex, nofollow` (the URL is public, not access-controlled).
+
+For the playground, check layout switching and shared set logging at 390px and 320px. The page is intentionally unlinked from the main landing page.
+
 Verify desktop and phone widths (1440, 390, and 320 pixels), no horizontal overflow, and the live-app, case-study, source and MCP-guide links. The deployment workflow also checks the preview server's JavaScript syntax. These checks cover the landing page, not the DocLifts application's acceptance suite.
 
 ## Content sources
