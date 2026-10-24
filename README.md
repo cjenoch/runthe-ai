@@ -45,4 +45,10 @@ Verify desktop and phone widths (1440, 390, and 320 pixels), no horizontal overf
 
 Product descriptions reflect DocLifts 0.16.3 Alpha on 2026-10-03: a live multi-user app with photo identification, image screening, machine history and read-only MCP access. Muse has successfully read app sets and imported history, with optional notes access authorized. Other clients require individual verification. Alpha accounts are operator-managed; public signup is closed. This repository does not modify or deploy DocLifts.
 
+The October 24 build note links to the security-review methodology in the enoch.ai
+case study. It covers validated fixes shipped in DocLifts 0.19.1 and the separate
+Node/Brotli security update, without claiming an exploit was demonstrated or an
+independent security certification. The supporting public sources are linked in
+the case study; detailed audit evidence stays private.
+
 Copyright 2026 Enoch AI LLC. All rights reserved.
