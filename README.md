@@ -43,12 +43,28 @@ Verify desktop and phone widths (1440, 390, and 320 pixels), no horizontal overf
 
 ## Content sources
 
-Product descriptions reflect DocLifts 0.16.3 Alpha on 2026-10-03: a live multi-user app with photo identification, image screening, machine history and read-only MCP access. Muse has successfully read app sets and imported history, with optional notes access authorized. Other clients require individual verification. Alpha accounts are operator-managed; public signup is closed. This repository does not modify or deploy DocLifts.
+Documentation reconciled on 2026-10-24 against **DocLifts 0.20.0 Alpha**. The landing page describes the live multi-user app with photo identification, image screening, machine history and eight read-only MCP tools. Muse has successfully read app sets and imported history, with optional notes access authorized. Other clients require individual verification. Alpha accounts are operator-managed; public signup is closed. This repository does not modify or deploy DocLifts.
+
+DocLifts now also offers four workout layouts, account and saved-photo deletion, and password-confirmed JSON, CSV ZIP and experimental Strong-style CSV downloads. Photo files and restoring exports are not included; actual Hevy import and owner acceptance of the latest workout flow remain pending. The landing page is a product summary, not a complete release log. Use the upstream [current status](https://github.com/cjenoch/DocLifts/blob/main/STATUS.md), [application overview](https://github.com/cjenoch/DocLifts/blob/main/APP_DOCS.md) and [export guide](https://github.com/cjenoch/DocLifts/blob/main/docs/data-exports.md) for current behavior and limits.
 
 The October 24 build note links to the security-review methodology in the enoch.ai
 case study. It covers validated fixes shipped in DocLifts 0.19.1 and the separate
 Node/Brotli security update, without claiming an exploit was demonstrated or an
 independent security certification. The supporting public sources are linked in
 the case study; detailed audit evidence stays private.
+
+Published through [runthe.ai PR #4](https://github.com/cjenoch/runthe-ai/pull/4),
+commit `e8188b6`, and [enoch.ai PR #4](https://github.com/cjenoch/enoch-ai/pull/4),
+commit `c48384d`. Both live pages passed the recorded October 24 checks at 320,
+390 and 1440 pixels, including the link to the security-review section. This is
+the prior publication record, not a new deployment from this documentation update.
+
+Five external UptimeRobot HTTP monitors were activated on October 24 for DocLifts
+database readiness, sign-in, MCP discovery, enoch.ai and runthe.ai. Cloudflare's
+tunnel health alert is also enabled for the production DocLifts tunnel; it does
+not monitor the two static sites. Its test notification was submitted, but inbox
+receipt and an actual outage/recovery drill remain unverified. Discovery checks
+do not exercise authenticated MCP tools. Private configuration stays in the
+operator's ops repository; the upstream status document tracks the open checks.
 
 Copyright 2026 Enoch AI LLC. All rights reserved.
